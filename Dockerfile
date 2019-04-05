@@ -14,7 +14,8 @@ RUN apk add --no-cache -v \
 && pip install --no-cache-dir awscli \
 && aws --version
 
-RUN npm install verdaccio-github-oauth-ui
+RUN npm install --save verdaccio-github-oauth-ui
+RUN npm install
 
 COPY run-verdaccio.sh /usr/local/bin/run-verdaccio.sh
 COPY s3-sync.sh /usr/local/bin/s3-sync.sh
