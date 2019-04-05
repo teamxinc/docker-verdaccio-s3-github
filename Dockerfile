@@ -2,6 +2,12 @@ FROM verdaccio/verdaccio:3
 
 USER root
 
+WORKDIR /usr/local/app
+
+ENV VERDACCIO_APPDIR=/usr/local/app \
+    VERDACCIO_PROTOCOL=http \
+    VERDACCIO_PORT=4873
+
 RUN apk add --no-cache -v \
     python \
     py2-pip \

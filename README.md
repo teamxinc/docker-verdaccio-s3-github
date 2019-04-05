@@ -14,8 +14,9 @@ docker run  --name verdaccio \
 
 ## Required Environment Variables
 
-| Variable Name | Example Value |
-|---------------|---------------|
-| GITHUB_OAUTH_ORG |  |
-| GITHUB_OAUTH_CLIENT_ID |  |
-| GITHUB_OAUTH_CLIENT_SECRET |  |
+| Variable Name | Required | Default Value |
+|---------------|----------|---------------|
+| GITHUB_OAUTH_CLIENT_ID        | Yes |  |
+| GITHUB_OAUTH_CLIENT_SECRET    | Yes |  |
+| VERDACCIO_PROTOCOL            | No  | http |
+| GITHUB_OAUTH_ORG              | No  | 4873 |
